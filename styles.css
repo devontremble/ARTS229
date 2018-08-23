@@ -8,5 +8,8 @@ p  {
   color: white;
 }
 #tobacco {
+  height: 500px;
+  width: 500px;
+  background-color: white;
   color: green;
 }
