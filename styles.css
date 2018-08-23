@@ -13,3 +13,6 @@ p  {
   background-color: white;
   color: green;
 }
+#tobacco p {
+  color: green;
+}
