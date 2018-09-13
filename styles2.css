@@ -1,0 +1,150 @@
+body {
+  background-color: #fff0db;
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+html {
+  height: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  15%, 70% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(600%);
+  }
+  100% {
+    transform: translateY(600%);
+  }
+}
+
+@keyframes diamondslide {
+  0% {
+    transform: rotate(-45deg) translateY(0);
+  }
+  15%, 70% {
+    transform: rotate(-45deg) translateY(0);
+  }
+  90% {
+    transform: rotate(-45deg) translateY(600%);
+  }
+  100% {
+    transform: rotate(-45deg) translateY(600%);
+  }
+}
+
+@keyframes size {
+    0%, 15%  {
+        transform: scale(1, 0);
+    }
+
+    25%, 100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes zoom {
+  0%, 25% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  35%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+#triangle {
+  width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid green;
+  animation-name: slide;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#square {
+  width: 50px;
+	height: 50px;
+	background-color: blue;
+  animation-name: slide;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#circle {
+  width: 50px;
+	height: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+  animation-name: slide;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#diamond {
+  width: 50px;
+	height: 50px;
+	background-color: cyan;
+  transform: rotate(-45deg);
+  animation-name: diamondslide;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#heart {
+  background-color: red;
+  height: 30px;
+  transform: rotate(-45deg);
+  width: 30px;
+  animation-name: slide;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#heart:before {
+  top: -15px;
+  left: 0;
+}
+#heart:before, #heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+#allstuff {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
+animation-name: zoom;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+
+#wrap {
+  width: 400px;
+  height: 100px;
+  overflow: hidden;
+  display: table;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#fixer {
+  display: inline-block;
+  margin: 0 10px;
+}
