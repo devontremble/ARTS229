@@ -1,5 +1,5 @@
 body {
-  background-color: #fff0db;
+  background-color: #D1D1BE;
   color: white;
   font-family: sans-serif;
   font-size: 40px;
@@ -32,10 +32,10 @@ html {
     transform: rotate(-45deg) translateY(0);
   }
   90% {
-    transform: rotate(-45deg) translateY(600%);
+    transform: rotate(-45deg) translateY(600%) translateX(-600%);
   }
   100% {
-    transform: rotate(-45deg) translateY(600%);
+    transform: rotate(-45deg) translateY(600%) translateX(-600%);
   }
 }
 
@@ -61,29 +61,35 @@ html {
 }
 
 #triangle {
+  display: inline-block;
+  margin: 0 10px;
   width: 0;
 	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 50px solid green;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 60px solid #FFFFE8;
   animation-name: slide;
   animation-timing-function: ease;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 #square {
-  width: 50px;
-	height: 50px;
-	background-color: blue;
+  display: inline-block;
+  margin: 0 10px;
+  width: 60px;
+	height: 60px;
+	background-color: #160C28;
   animation-name: slide;
   animation-timing-function: ease;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 #circle {
-  width: 50px;
-	height: 50px;
-  background-color: yellow;
+  display: inline-block;
+  margin: 0 5px;
+  width: 60px;
+	height: 60px;
+  background-color: #EFCB68;
   border-radius: 50%;
   animation-name: slide;
   animation-timing-function: ease;
@@ -91,9 +97,11 @@ html {
   animation-iteration-count: infinite;
 }
 #diamond {
-  width: 50px;
-	height: 50px;
-	background-color: cyan;
+  display: inline-block;
+  margin: 0 20px;
+  width: 40px;
+	height: 40px;
+	background-color: #055864;
   transform: rotate(-45deg);
   animation-name: diamondslide;
   animation-timing-function: ease;
@@ -101,11 +109,13 @@ html {
   animation-iteration-count: infinite;
 }
 #heart {
-  background-color: red;
+  display: inline-block;
+  margin: 0 10px;
+  background-color: #DE0D92;
   height: 30px;
   transform: rotate(-45deg);
   width: 30px;
-  animation-name: slide;
+  animation-name: diamondslide;
   animation-timing-function: ease;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -116,7 +126,7 @@ html {
 }
 #heart:before, #heart:after {
   content: "";
-  background-color: red;
+  background-color: #DE0D92;
   border-radius: 50%;
   height: 30px;
   position: absolute;
@@ -133,8 +143,8 @@ animation-iteration-count: infinite;
 }
 
 #wrap {
-  width: 400px;
-  height: 100px;
+  width: 500px;
+  height: 200px;
   overflow: hidden;
   display: table;
   position: absolute;
@@ -145,6 +155,7 @@ animation-iteration-count: infinite;
   bottom: 0;
 }
 #fixer {
-  display: inline-block;
-  margin: 0 10px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
