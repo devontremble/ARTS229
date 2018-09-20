@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+}
+h1 {
+  color: white;
+}
+p  {
+  color: white;
+}
+#tobacco {
+  height: 500px;
+  width: 500px;
+  background-color: blue;
+  color: orange;
+}
+#tobacco p {
+  color: orange;
+}
+ul {
+  color: white;
+}

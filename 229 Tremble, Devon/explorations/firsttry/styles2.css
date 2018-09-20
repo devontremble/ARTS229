@@ -1,0 +1,161 @@
+body {
+  background-color: #D1D1BE;
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+html {
+  height: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+  15%, 70% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(600%);
+  }
+  100% {
+    transform: translateY(600%);
+  }
+}
+
+@keyframes diamondslide {
+  0% {
+    transform: rotate(-45deg) translateY(0);
+  }
+  15%, 70% {
+    transform: rotate(-45deg) translateY(0);
+  }
+  90% {
+    transform: rotate(-45deg) translateY(600%) translateX(-600%);
+  }
+  100% {
+    transform: rotate(-45deg) translateY(600%) translateX(-600%);
+  }
+}
+
+@keyframes size {
+    0%, 15%  {
+        transform: scale(1, 0);
+    }
+
+    25%, 100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes zoom {
+  0%, 25% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  35%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+#triangle {
+  display: inline-block;
+  margin: 0 10px;
+  width: 0;
+	height: 0;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 60px solid #FFFFE8;
+  animation-name: slide;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#square {
+  display: inline-block;
+  margin: 0 10px;
+  width: 60px;
+	height: 60px;
+	background-color: #160C28;
+  animation-name: slide;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#circle {
+  display: inline-block;
+  margin: 0 5px;
+  width: 60px;
+	height: 60px;
+  background-color: #EFCB68;
+  border-radius: 50%;
+  animation-name: slide;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#diamond {
+  display: inline-block;
+  margin: 0 20px;
+  width: 40px;
+	height: 40px;
+	background-color: #055864;
+  transform: rotate(-45deg);
+  animation-name: diamondslide;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#heart {
+  display: inline-block;
+  margin: 0 10px;
+  background-color: #DE0D92;
+  height: 30px;
+  transform: rotate(-45deg);
+  width: 30px;
+  animation-name: diamondslide;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#heart:before {
+  top: -15px;
+  left: 0;
+}
+#heart:before, #heart:after {
+  content: "";
+  background-color: #DE0D92;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+#allstuff {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
+animation-name: zoom;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+
+#wrap {
+  width: 500px;
+  height: 200px;
+  overflow: hidden;
+  display: table;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#fixer {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
