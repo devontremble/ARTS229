@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://chad-bennett.github.io/arts229/mediaQueries/mediaTemplate.html -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Media Queries Template</title>
+
+  <meta name="description" content="an experiment in creating different layouts and themes for different screen sizes">
+  <meta name="keywords" content="media query, layout, assignment">
+  <meta name="author" content="your name here">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- this viewport setting is important for responsive web design -->
+
+  <style>
+
+  #menubg {
+    background-image: url(diamondplate.jpg);
+    width: 80vw;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  body {
+    background: white;
+    color: #8E4A49;
+    font-family: sans-serif;
+    width:80vw; /*this makes it so the body never takes more than 80% of screen*/
+    margin: 0 auto; /*vertical margins are 0, horizontal margins automatically push*/
+    max-width: 1000px; /*but it will never stretch beyond 1000px (800 is also good)*/
+  }
+  h1 {
+    font-size: 3em;
+  }
+  figure {
+    width: 30vw;
+    float: right;
+  }
+/*below is to reset floats(?)*/
+  figure::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  figcaption {
+    text-align: center;
+  }
+
+/*the properties of the intial body apply until the screen is at least 600px*/
+  @media screen and (min-width: 600px) {
+    body {
+      background: #8E4A49;
+      color: white;
+    }
+    figure {
+      width: 15vw;
+    }
+  }
+/*then once it hits 1200px...*/
+  @media screen and (min-width: 1200px) {
+    body {
+      background: black;
+      color: #8E4A49;
+    }
+    article {
+      float:left;
+      width: 60%;
+      height: 100vh;
+      margin-right: 5%;
+    }
+    aside {
+      float: left;
+      width: 30%;
+    }
+  }
+
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>Biggy Piggy and the Giant Ham BBQ</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="https://devontremble.github.io/ARTS229/index.html">Home</a></li>
+      <li><a href="https://chad-bennett.github.io/arts229/mediaQueries/mediaTemplate.html#">About Us</a></li>
+      <li><a href="https://chad-bennett.github.io/arts229/mediaQueries/mediaTemplate.html#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+<div id="menubg">
+  <article>
+    <h1>We Smoke Our Pork</h1>
+    <p>Tenderloin beef sirloin flank cow, tail shank chuck pancetta hamburger biltong alcatra ribeye pork loin. Jerky frankfurter ball tip pork tenderloin shankle ham hock short loin sirloin chuck chicken leberkas jowl.</p>
+  </article>
+
+  <aside>
+    <figure>
+      <img src="pig.png" alt="picture of pig" title="pig" height="100%" width="100%">
+      <figcaption>This image is copyright-free</figcaption>
+    </figure>
+
+    <p>Pork chop ribeye porchetta, burgdoggen flank sirloin beef landjaeger pork. Turkey pork chop jerky, shankle shoulder buffalo sirloin short ribs fatback kevin shank meatloaf ball tip andouille.</p>
+  </aside>
+  <section>
+    <h1>More About Pigs</h1>
+    <p>Biltong venison landjaeger short loin tenderloin cupim. Fatback short loin andouille, corned beef brisket shoulder doner pig hamburger ham kielbasa. Pancetta alcatra venison beef corned beef sirloin capicola, shoulder pork belly prosciutto frankfurter
+      chuck salami turkey tongue.</p>
+
+    <blockquote>
+      Spicy jalapeno bacon ipsum dolor amet chicken prosciutto shoulder, venison tail meatloaf pork loin bacon sirloin cupim. Leberkas capicola burgdoggen, buffalo beef ribs alcatra flank. Filet mignon biltong shankle, ham jerky flank meatball leberkas venison
+      picanha pork loin shank.
+    </blockquote>
+
+    <p>Pork doner pork chop burgdoggen strip steak flank. Salami shank pastrami corned beef ham hock biltong rump pork chop meatloaf sausage picanha porchetta swine hamburger. </p>
+
+    <p>Pancetta landjaeger sirloin leberkas spare ribs drumstick bacon cow ham hock swine chicken meatloaf beef ribs strip steak alcatra. Beef ribs landjaeger picanha porchetta, pastrami leberkas short ribs frankfurter bresaola corned beef sirloin drumstick.</p>
+  </section>
+</div>
+
+<footer>
+  <hr>
+  <p>©Tremble Enterprises</p>
+</footer>
+</body>
+
+</html>
