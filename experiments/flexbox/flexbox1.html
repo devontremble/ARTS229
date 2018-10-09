@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Devon's Flexbox Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    .flex-container1 {
+      background-color: pink;
+      width: 200px;
+      height: 30px;
+      color: blue;
+      display: flex;
+    }
+    .flex-container2 {
+      background-color: pink;
+      width: 200px;
+      height: 30px;
+      color:red;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .flex-container3 {
+      background-color: pink;
+      width: 200px;
+      height: 30px;
+      color:green;
+      display: flex;
+      justify-content: space-between;
+    }
+    .flex-container4 {
+      background-color: purple;
+      width: 300px;
+      height: 200px;
+      color:orange;
+      display: flex;
+      align-items: center;
+    }
+    .flex-container5 {
+        color:grey;
+      }
+    #greedy {
+      margin: 3px;
+      flex-grow: 1;
+      height: 20px;
+      width: 20px;
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>The Beat</h1>
+  </header>
+
+  <section class="flex-container1">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </section>
+
+  <section class="flex-container2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </section>
+
+  <section class="flex-container3">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </section>
+
+  <section class="flex-container4">
+    <div id="greedy">1</div>
+    <div id="greedy">2</div>
+    <div id="greedy">3</div>
+    <div id="greedy">4</div>
+    <div id="greedy">5</div>
+    <div id="greedy">6</div>
+    <div id="greedy">7</div>
+    <div id="greedy">8</div>
+  </section>
+
+  <section class="flex-container5">
+    <div>
+      <h2>title of main article</h2>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    </div>
+    <div>
+      <h2>sidebar here</h2>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    </div>
+    <div>
+      <h2>footer stuff here</h2>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    </div>
+  </section>
+
+</body>
+
+</html>

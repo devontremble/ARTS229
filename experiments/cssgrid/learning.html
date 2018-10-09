@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>John Oliver</title>
+</head>
+
+<style>
+html {
+  background-color: #124559;
+  background-repeat: no-repeat;
+  background-image: url(https://www.andybarefoot.com/codepen/images/johnoliver2.jpg);
+  background-size: 100vw;
+  background-position: center  6vw;
+}
+body {
+font-family: 'Roboto Slab', serif;
+font-size:1.8vw;
+color: #D3E6D9;
+}
+a {
+color: #D3E6D9;
+}
+
+p{
+position: absolute;
+bottom: 0;
+margin-bottom: 0.4vw;
+}
+#row2b{
+text-align:right;
+}
+#row2b > p{
+font-family: 'Rozha One', serif;
+position: relative;
+font-size: 5vw;
+}
+#row2b > p:nth-child(1){
+margin-top: 5vw;
+}
+#row2b > p:nth-child(2){
+margin-top: -1vw;
+font-size: 7.5vw;
+}
+
+#grid {
+display: grid;
+grid-gap: 1vw;
+grid-template-rows: 5vw;
+grid-auto-rows: 9vw;
+grid-template-columns: 1fr repeat(6, 3fr) 1fr;
+}
+
+#grid > div{
+position: relative;
+background-color:#124559;
+outline-style: solid;
+outline-color:#124559;
+outline-width: 1vw;  \\ Same as grid gap
+}
+
+div#row1a,div#row2a,div#row3a,div#row3b,div#row4a,div#row5a,div#row5b,div#row6a,div#row7a,div#row8a,div#row9a,div#row10a,div#row12a{
+background-color:rgba(64,67,78,0.4);
+}
+
+#row1a, div#row5a{
+grid-column-end: span 3;
+}
+#row1b, div#row2b, div#row3b, div#row5c, div#row8a, div#row8b, div#row9a, div#row12a{
+grid-column-end: span 2;
+}
+div#row2b{
+grid-row-end: span 2;
+}
+
+#filler {
+width: 100vw;
+height: 30vw;
+background-color:#ff0;
+margin-left: -1vw;
+}
+  }
+</style>
+
+<body>
+
+<div id="grid">
+<!-- row0 -->
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+<!-- row1 -->
+  <div></div>
+  <div></div>
+  <div id="row1a"></div>
+  <div id="row1b"><p>Using CSS Grid as a mask to create a version of <a href="https://media-s3-us-east-1.ceros.com/ceros-marketing/images/2016/10/24/ddad31747373bd0169a985ebbd60cad2/poster-full.jpg">this poster</a>.</p></div>
+  <div></div>
+<!-- row2 -->
+  <div></div>
+  <div id="row2a"></div>
+  <div id="row2b"><p>John</p><p>Oliver</p></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+<!-- row3 -->
+  <div></div>
+  <div id="row3a"></div>
+  <div id="row3b"></div>
+  <div></div>
+  <div></div>
+<!-- row4 -->
+  <div></div>
+  <div></div>
+  <div></div>
+  <div id="row4a"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+<!-- row5 -->
+  <div></div>
+  <div id="row5a"></div>
+  <div id="row5b"></div>
+  <div id="row5c"><p>Items in the grid are left partially transparent to expose areas of a full background image.</p></div>
+  <div></div>
+<!-- row6 -->
+  <div></div>
+  <div></div>
+  <div id="row6a"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+<!-- row7 -->
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div id="row7a"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+<!-- row8 -->
+  <div></div>
+  <div></div>
+  <div></div>
+  <div id="row8a"></div>
+  <div id="row8b"><p>An outline is applied to each grid item to colour the gaps between rows and columns.</p></div>
+  <div></div>
+<!-- row9 -->
+  <div></div>
+  <div id="row9a"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+<!-- row10 -->
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div id="row10a"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+<!-- row11 -->
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+<!-- row12 -->
+  <div></div>
+  <div></div>
+  <div id="row12a"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+<!-- row13 -->
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+<!-- row14 -->
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Devon's Flexbox Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      color: white;
+      background-color: black;
+      font-family: sans-serif;
+    }
+    h1 {
+      margin-top: 40px;
+      font-size: 40pt;
+    }
+    .flex-container1 {
+      width: 50px;
+      height: 100px;
+      margin: 0 auto;
+      color: blue;
+      display: flex;
+      flex-flow: column-reverse wrap;
+      text-align: center;
+    }
+    .flex-container2 {
+      width: 50px;
+      height: 100px;
+      margin: 0 auto;
+      color:red;
+      display: flex;
+      flex-flow: column-reverse wrap;
+      justify-content: flex-end;
+      text-align: center;
+    }
+    .flex-container3 {
+      width: 50px;
+      height: 100px;
+      margin: 0 auto;
+      color: green;
+      display: flex;
+      flex-flow: column wrap;
+    }
+    .flex-container4 {
+      width: 50px;
+      height: 100px;
+      margin: 0 auto;
+      color: orange;
+      display: flex;
+      flex-flow: column wrap;
+    }
+    .flex-container5 {
+        color:grey;
+      }
+    #greedy {
+      margin: 3px;
+      flex-grow: 1;
+      height: 20px;
+      width: 20px;
+    }
+    #equalizer {
+      display: flex;
+      justify-content: center;
+      margin: auto 5;
+    }
+    h1 {
+      font-family: sans-serif;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>the beat.</h1>
+  </header>
+
+<div id="equalizer">
+  <section class="flex-container1">
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>7</div>
+    <div>&#9787;</div>
+  </section>
+
+  <section class="flex-container2">
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+  </section>
+
+  <section class="flex-container3">
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+  </section>
+
+  <section class="flex-container4">
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+    <div>&#9787;</div>
+  </section>
+</div>
+
+  <section class="flex-container5">
+    <div>
+      <h2>local venues</h2>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    </div>
+    <div>
+      <h2>locations and more</h2>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    </div>
+    <div>
+      <h2>wait until you see what's next</h2>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    </div>
+  </section>
+
+</body>
+
+</html>

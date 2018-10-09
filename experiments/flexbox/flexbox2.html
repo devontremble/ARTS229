@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>flexbox demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      background: #222;
+      font-family: sans-serif;
+    }
+
+    header {
+      color: #ccc;
+      text-align: center;
+    }
+
+    .flex-container5 {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    .article {
+      flex: 100%;
+      background: #ccc;
+      padding: 2em;
+      box-sizing: border-box;
+    }
+
+    .siderbar {
+      flex: 100%;
+      background: #aaa;
+      padding: 2em;
+      box-sizing: border-box;
+      margin-top: 1%;
+    }
+
+    .footer {
+      flex: 100%;
+      background: #888;
+      padding: 2em;
+      box-sizing: border-box;
+      margin-top: 1%;
+      margin-bottom: 2%;
+    }
+
+    @media screen and (min-width: 1000px) {
+      .article {
+        flex: 69%;
+        margin-right: 1%;
+      }
+
+      .siderbar {
+        flex: 30%;
+        margin-top: 0;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>flexbox experiments</h1>
+  </header>
+
+  <section class="flex-container5">
+    <div class="article">
+      <h2>title of main article</h2>
+      <p>Vim id brute aliquip urbanitas, quo brute ludus imperdiet id. Ius ne vocibus eligendi constituto, cu justo maluisset ius. Vis ex natum erant, et quo rebum posse argumentum. Quo aperiri bonorum quaestio at. Pro an viris adipisci scripserit,
+        an dicant theophrastus mea.</p>
+
+      <p>At cum minimum commune scriptorem. Decore volumus splendide te pri. Ne sea tale eius. Esse sanctus vim ad.</p>
+
+      <p>Nonumes corpora ius et. Eros illud epicurei sea id, duo cu inermis albucius. Probo nominavi conceptam at duo. Te vim nisl docendi. Eum ea quem splendide, tamquam perpetua accusamus eu sea. Vel elit dolorem tacimates cu, eu eligendi facilisi
+        indoctum est. Qui ea modo clita munere, ne rebum sapientem tincidunt cum.</p>
+
+      <p>Liber fabellas assueverit ut eos, tractatos partiendo an duo. Vis ad aeque oratio diceret. Molestiae democritum scriptorem nec in. Nec fugit dolorem ea, pro an etiam vituperatoribus, tempor probatus no eam. Ea has veri theophrastus, te
+        homero rationibus vel, assum apeirian ex vis. Ludus similique interesset ei per. Eros soleat omnesque vix an, appetere laboramus nec eu.</p>
+
+      <p>Feugait appareat est te, id ius prima appetere. Vim ad probo admodum perpetua, reque graece in vel. Maiorum instructior vix no, per veri apeirian ocurreret in, labitur facilisis eu his. Mel ne natum audiam, propriae mandamus ut quo.</p>
+    </div>
+
+    <div class="siderbar">
+      <h2>sidebar here</h2>
+      <p>this is an exploration of using flexbox to build a single column layout on smaller devices and simple two-colum layout on desktop screens.</p>
+    </div>
+
+    <div class="footer">
+      <h2>footer stuff here</h2>
+      <p>paragraph text. put some filler content here. make this an article or something.</p>
+    </div>
+  </section>
+
+</body>
+
+</html>

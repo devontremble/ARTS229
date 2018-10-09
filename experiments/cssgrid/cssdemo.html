@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>css grid demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body,
+    html,
+    .letter {
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 250px 2fr 1fr;
+      grid-template-rows: 1fr auto;
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      background-color: black;
+      padding: 5px;
+    }
+
+    .letter {
+      background-color: #b37b00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      font-size: 70px;
+      color: white;
+      line-height: 1;
+      font-weight: 600;
+      transition: all .3s ease;
+    }
+
+    /* get elements to span multiple cells in the grid */
+    .double {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+
+    /* responsive layout  changes based on screen size
+
+    @media screen and (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+*/
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>css grid demo</h1>
+  </header>
+
+  <div class='wrapper'>
+    <h2 class='letter double'>1</h2>
+    <h2 class='letter'>2</h2>
+    <h2 class='letter'>3</h2>
+    <h2 class='letter'>4</h2>
+    <h2 class='letter'>5</h2>
+  </div>
+
+</body>
+
+</html>
