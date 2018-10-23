@@ -1,0 +1,148 @@
+body {
+  color: gold;
+  background-color: black;
+}
+a {
+  text-decoration: none;
+  color: gold;
+}
+#bottomimage {
+  opacity: 0.5;
+  position: fixed;
+  z-index: -1;
+  float: right;
+  bottom: 0px;
+  right: 0px;
+  height: 260px;
+  width: 231px;
+}
+.grid {
+  display: grid;
+  width: 85%;
+  margin: 10px auto;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+}
+
+.span-col-3 {
+  grid-column: span 3 / auto;
+}
+.span-row-2 {
+  grid-row: span 2 / auto;
+}
+
+#header {
+  height: 100px;
+  width: 95%;
+  margin: 15px auto;
+
+  text-align: center;
+
+  color: black;
+  border-radius: 15px;
+  background-color: gold;
+
+  font-size: 30pt;
+}
+
+#footer {
+  align-content: center;
+
+  width: 95%;
+  margin: 15px auto;
+  padding: 7px;
+
+  text-align: center;
+
+  color: black;
+  border-radius: 15px;
+  background-color: gold;
+
+  font-size: 12pt;
+}
+
+#xxrxx {
+  align-items: center;
+  text-align: center;
+
+}
+#video {
+  margin: auto;
+  align-content: center;
+}
+#video iframe {
+  width: 560px;
+  height: 315px;
+}
+#sidetext {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 72px;
+  color: white;
+}
+#sidetext p {
+    transform: rotate(270deg);
+}
+#sidebar {
+  background-color: gray;
+  height 60%;
+  color: black;
+  border-radius: 20px;
+  padding: 15px;
+  margin-right: 50px
+}
+
+@media screen and (min-width: 600px) {
+  #header {
+    max-width: 800px
+  }
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #footer {
+    max-width: 800px
+  }
+  #video iframe {
+    width: 560px;
+    height: 315px;
+  }
+  #bottomimage {
+    height: 370px;
+    width: 341px;
+}
+
+@media screen and (min-width: 1200px) {
+  #header {
+    background-color: rgba(0,0,0,0);
+    max-width: 1400px;
+    color: gold;
+    border-bottom: solid gold 5px;
+    border-radius: 0px;
+  }
+  #footer {
+    background-color: rgba(0,0,0,0);
+    max-width: 1400px;
+    color: gold;
+    border-top: solid gold 5px;
+    border-radius: 0px;
+    padding-top: 15px;
+  }
+  #xxrxx {
+      font-size: 40px;
+  }
+  #video iframe {
+    width: 700px;
+    height: 440px;
+  }
+  .grid {
+    grid-template-columns: repeat(3, auto);
+  }
+  #sidetext {
+    width: 100px;
+  }
+  #bottomimage {
+    height: 480px;
+    width: 451px;
+  }
+}

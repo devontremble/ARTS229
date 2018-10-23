@@ -1,0 +1,166 @@
+:root {
+  --color1: gold;
+  --color2: black;
+  --majorfont: serif;
+}
+
+body {
+  background-color: var(--color2);
+  color: var(--color1);
+}
+a {
+  text-decoration: none;
+  color: var(--color1);
+}
+.grid {
+  display: grid;
+  width: 85%;
+  margin: 10px auto;
+  grid-template-columns: 85%;
+  grid-gap: 10px;
+}
+.grid div {
+  background-color: rg-ba(255, 255, 255, 0.23);
+}
+.span-all-col{
+  grid-column: span 2;
+}
+
+.span-row-2 {
+  grid-row: span 2;
+}
+#xxrxx {
+  height: 75px;
+  width: 80%;
+  margin: 10px auto;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  color: var(--color2);
+  border-radius: 15px;
+  background-color: var(--color1);
+
+  font-size: 48pt;
+}
+#footer {
+  text-align: center;
+}
+#media {
+  padding: 15px;
+  align-content: center;
+}
+#nav {
+  font-size: 20pt;
+  text-align: center;
+}
+#news {
+  padding: 5px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.4)
+}
+#news2 {
+  display: none;
+}
+#sidetext {
+  grid-row: span 2;
+  display: none;
+  color: white;
+}
+#sidetext p {
+  transform: rotate(270deg);
+}
+#placeholder {
+  margin: 10px auto;
+  height: 45%;
+  width: 55%;
+  background-color: green;
+}
+#bottomimage {
+  opacity: 0.5;
+  position: fixed;
+  z-index: -1;
+  float: right;
+  bottom: 0px;
+  right: 0px;
+  height: 400px;
+  width: 400px;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    grid-template-columns: 15% 85%;
+  }
+  .span-all-col {
+    grid-column: span 2;
+  }
+  #placeholder {
+    width: 400px;
+    height: 220px;
+  }
+  #sidetext {
+    display: inline;
+    font-size: 50px;
+    padding-top: 100px;
+    opacity: 0.5;
+  }
+  #xxrxx {
+    width: 85%;
+    margin: 10px auto;
+  }
+  #nav {
+    font-size: 23pt;
+  }
+  #side2 {
+    margin-top: 230px;
+    display: run-in;
+  }
+  #footer {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    grid-template-columns: 10% auto 25%;
+  }
+  .span-all-col {
+    grid-column: span 3;
+  }
+  #xxrxx {
+    background-color: rgba(0,0,0,0);
+    max-width: 1400px;
+    color: var(--color1);
+    border-bottom: solid var(--color1) 5px;
+    border-radius: 0px;
+    font-size: 62pt;
+    font-weight: bolder;
+    margin: 10px auto;
+    height: 95px;
+  }
+  #side2 {
+    display: none;
+  }
+  #nav {
+    font-size: 33pt;
+  }
+  #news2 {
+    display: inline;
+    color: white;
+    font-size: 40pt;
+    text-align: center;
+  }
+  #sidetext {
+    grid-row: span 1;
+    padding-top: 200px;
+    font-size: 72px;
+    opacity: 0.5;
+  }
+  #placeholder {
+    width: 720px;
+    height: 480px;
+  }
+  p {
+    max-width: 800px;
+  }
+}
