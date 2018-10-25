@@ -4,19 +4,26 @@
   --majorfont: serif;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color1);
+}
 body {
   background-color: var(--color2);
   color: var(--color1);
 }
-a {
-  text-decoration: none;
-  color: var(--color1);
+h4 {
+  font-size: 38pt;
+  text-align: center;
+
 }
 p {
   color:white;
 }
 .contact {
-
+  width: 80%;
+  align-content: center;
+  margin: 10px auto;
 }
 .grid {
   display: grid;
@@ -35,19 +42,15 @@ p {
 .span-row-2 {
   grid-row: span 2;
 }
-#xxrxx {
-  height: 75px;
-  width: 80%;
-  margin: 10px auto;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-
-  color: var(--color2);
-  border-radius: 15px;
-  background-color: var(--color1);
-
-  font-size: 48pt;
+#bottomimage {
+  opacity: 0.5;
+  position: fixed;
+  z-index: -1;
+  float: right;
+  bottom: 0px;
+  right: 0px;
+  height: 400px;
+  width: 400px;
 }
 #footer {
   text-align: center;
@@ -68,6 +71,12 @@ p {
 #news2 {
   display: none;
 }
+#placeholder {
+  margin: 10px auto;
+  height: 100px;
+  width: 170px%;
+  background-color: green;
+}
 #sidetext {
   grid-row: span 2;
   display: none;
@@ -76,22 +85,41 @@ p {
 #sidetext p {
   transform: rotate(270deg);
 }
-#placeholder {
+#survey {
+    text-align: center;
+    font-size: 18pt;
+}
+#table {
   margin: 10px auto;
-  height: 100px;
-  width: 170px%;
-  background-color: green;
+  width: 500px;
 }
-#bottomimage {
-  opacity: 0.5;
-  position: fixed;
-  z-index: -1;
-  float: right;
-  bottom: 0px;
-  right: 0px;
-  height: 400px;
-  width: 400px;
+#table table {
+  padding: 5px;
 }
+#table td {
+  padding: 5px;
+  color: white;
+}
+#xxrxx {
+  height: 75px;
+  width: 80%;
+  margin: 10px auto;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  color: var(--color2);
+  border-radius: 15px;
+  background-color: var(--color1);
+
+  font-size: 48pt;
+}
+
+/*
+-
+= DIVIDER FOR TABLETS
+-
+*/
 
 @media screen and (min-width: 600px) {
   .grid {
@@ -99,6 +127,15 @@ p {
   }
   .span-all-col {
     grid-column: span 2;
+  }
+  #iphonefixer {
+    display: none;
+  }
+  #footer {
+    padding-top: 10px;
+  }
+  #nav {
+    font-size: 23pt;
   }
   #placeholder {
     padding: 15px;
@@ -117,45 +154,32 @@ p {
     padding-top: 100px;
     opacity: 0.5;
   }
-  #xxrxx {
-    width: 85%;
-    margin: 10px auto;
-  }
-  #nav {
-    font-size: 23pt;
-  }
   #side2 {
     margin-top: 230px;
     display: run-in;
   }
-  #footer {
-    padding-top: 10px;
-  }
-  #iphonefixer {
-    display: none;
+  #xxrxx {
+    width: 85%;
+    margin: 10px auto;
   }
 }
 
+
+/*
+-
+= DIVIDER FOR PC
+-
+*/
+
 @media screen and (min-width: 1200px) {
+  p {
+    max-width: 800px;
+  }
   .grid {
     grid-template-columns: 10% auto 25%;
   }
   .span-all-col {
     grid-column: span 3;
-  }
-  #xxrxx {
-    background-color: rgba(0,0,0,0);
-    max-width: 1400px;
-    color: var(--color1);
-    border-bottom: solid var(--color1) 5px;
-    border-radius: 0px;
-    font-size: 62pt;
-    font-weight: bolder;
-    margin: 10px auto;
-    height: 95px;
-  }
-  #side2 {
-    display: none;
   }
   #nav {
     font-size: 33pt;
@@ -165,12 +189,6 @@ p {
     color: white;
     font-size: 40pt;
     text-align: center;
-  }
-  #sidetext {
-    grid-row: span 1;
-    padding-top: 200px;
-    font-size: 72px;
-    opacity: 0.5;
   }
   #placeholder {
     padding: 16px;
@@ -183,7 +201,24 @@ p {
     width: 720px;
     height: 480px;
   }
-  p {
-    max-width: 800px;
+  #sidetext {
+    grid-row: span 1;
+    padding-top: 200px;
+    font-size: 72px;
+    opacity: 0.5;
+  }
+  #side2 {
+    display: none;
+  }
+  #xxrxx {
+    background-color: rgba(0,0,0,0);
+    max-width: 1400px;
+    color: var(--color1);
+    border-bottom: solid var(--color1) 5px;
+    border-radius: 0px;
+    font-size: 62pt;
+    font-weight: bolder;
+    margin: 10px auto;
+    height: 95px;
   }
 }
