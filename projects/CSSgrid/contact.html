@@ -11,9 +11,54 @@
   <meta name="author" content="your name here">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="newstyles.css">
 </head>
 
 <body>
+  <a href="../../index.html">go back</a>
+  <section class="grid">
+    <div class="span-all-col">
+      <div id="xxrxx">XXRXX</div>
+      <div id="nav">
+        <a href="index.html">home</a> |
+        <a href="gallery.html">media</a> |
+        <a href="about.html">about</a> |
+        <a href="contact.html">contact</a>
+      </div>
+    </div>
+
+    <section class="contact">
+    <form action="/cgi-bin/form.cgi" method="post" id="order">
+    <h4>Care to contact us? Fill out the forms below!</h4>
+    <div id="table">
+    <table width="400" border="0">
+      <tbody>
+        <tr>
+          <td>NAME</td>
+          <td><input type="text" id="name" value="name" maxlength="50"></td>
+        </tr>
+        <tr>
+          <td>EMAIL</td>
+          <td><input name="name" type="text" id="email" size="30" maxlength="75"></td>
+        </tr>
+        <tr>
+          <td>MESSAGE</td>
+          <td><textarea cols="50" rows="7" maxlength="500">Tell us what you think...</textarea></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    Would you like to join our newsletter? <input type="checkbox">
+    	</div>
+    	<br>
+    	<center><input name="submit" type="submit" id="submit" value="Submit"></center>
+    	<input name="form_id" type="hidden" id="form_id" value="email">
+    	<input name="submit_to" type="hidden" id="submit_to" value="trembled@mail.lcc.edu">
+    	<input name="data_order" type="hidden" id="data_order" value="name">
+    	<input name="ok_url" type="hidden" id="ok_url" value="thankyou.html">
+    	</form>
+    </section>
+
+      <div id="bottomimage"><img src="graphics/record.png"/></div>
 </body>
 </html>

@@ -12,11 +12,17 @@ a {
   text-decoration: none;
   color: var(--color1);
 }
+p {
+  color:white;
+}
+.contact {
+
+}
 .grid {
   display: grid;
   width: 85%;
   margin: 10px auto;
-  grid-template-columns: 85%;
+  grid-template-columns: 100%;
   grid-gap: 10px;
 }
 .grid div {
@@ -72,8 +78,8 @@ a {
 }
 #placeholder {
   margin: 10px auto;
-  height: 45%;
-  width: 55%;
+  height: 100px;
+  width: 170px%;
   background-color: green;
 }
 #bottomimage {
@@ -95,8 +101,15 @@ a {
     grid-column: span 2;
   }
   #placeholder {
-    width: 400px;
-    height: 220px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 410px;
+    height: 235px;
+  }
+  #placeholder iframe{
+    width: 410px;
+    height: 235px;
   }
   #sidetext {
     display: inline;
@@ -117,6 +130,9 @@ a {
   }
   #footer {
     padding-top: 10px;
+  }
+  #iphonefixer {
+    display: none;
   }
 }
 
@@ -157,6 +173,13 @@ a {
     opacity: 0.5;
   }
   #placeholder {
+    padding: 16px;
+    width: 725px;
+    height: 485px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.4)
+  }
+  #placeholder iframe {
     width: 720px;
     height: 480px;
   }
