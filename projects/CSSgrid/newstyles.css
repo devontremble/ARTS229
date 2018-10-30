@@ -1,9 +1,36 @@
 :root {
   --color1: gold;
   --color2: black;
+  --color3: white;
+  --colortrans: rgba(255, 255, 255, 0.4);
   --majorfont: serif;
+  --thankfont: 'Yeseva One', cursive;
 }
-
+@keyframes thankyou {
+  0% {
+    transform: scale(0) rotate(0deg);
+  }
+  22% {
+    transform: scale(1) rotate(-20deg);
+  }
+  40% {
+    transform: scale(1)rotate(-20deg);
+  }
+  56% {
+    transform: scale(0) rotate(0deg);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes record {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 a {
   text-decoration: none;
   color: var(--color1);
@@ -13,12 +40,14 @@ body {
   color: var(--color1);
 }
 h4 {
-  font-size: 38pt;
+  font-size: 24pt;
   text-align: center;
-
 }
 p {
   color:white;
+}
+table {
+  width:200px;
 }
 .contact {
   width: 80%;
@@ -66,16 +95,43 @@ p {
 #news {
   padding: 5px;
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.4)
+  background-color: var(--colortrans)
 }
 #news2 {
   display: none;
+  text-align: center;
 }
 #placeholder {
   margin: 10px auto;
   height: 100px;
   width: 170px%;
   background-color: green;
+}
+#placeholder iframe {
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.125)
+}
+#record {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 600px;
+  width: 600px;
+  margin-top: -300px;
+  margin-left: -300px;
+}
+#record h3 {
+  font-size: 18pt;
+  padding-top: 15px;
+  text-align: center;
+  color: gray;
+}
+#record img {
+  animation-name: record;
+  animation-duration: 4s;
+  opacity: 0.4;
+  height: 600px;
+  width: 600px;
 }
 #sidetext {
   grid-row: span 2;
@@ -100,6 +156,21 @@ p {
   padding: 5px;
   color: white;
 }
+#thankyou {
+  animation-name: thankyou;
+  animation-duration: 5s;
+  text-align: center;
+  height: 150px;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 70pt;
+  color: white;
+  margin-left: -350px;
+  margin-top: -75px;
+  font-family: var(--thankfont);
+}
 #xxrxx {
   height: 75px;
   width: 80%;
@@ -122,6 +193,9 @@ p {
 */
 
 @media screen and (min-width: 600px) {
+  table {
+    width: 400px;
+  }
   .grid {
     grid-template-columns: 15% 85%;
   }
@@ -140,7 +214,7 @@ p {
   #placeholder {
     padding: 15px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: var(--colortrans);
     width: 410px;
     height: 235px;
   }
@@ -155,7 +229,7 @@ p {
     opacity: 0.5;
   }
   #side2 {
-    margin-top: 230px;
+    margin-top: 480px;
     display: run-in;
   }
   #xxrxx {
@@ -172,6 +246,10 @@ p {
 */
 
 @media screen and (min-width: 1200px) {
+  h4 {
+    font-size: 38pt;
+    text-align: center;
+  }
   p {
     max-width: 800px;
   }
@@ -195,7 +273,7 @@ p {
     width: 725px;
     height: 485px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.4)
+    background-color: var(--colortrans)
   }
   #placeholder iframe {
     width: 720px;
