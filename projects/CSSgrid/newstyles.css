@@ -1,6 +1,6 @@
 :root {
   --color1: gold;
-  --color2: black;
+  --color2: rgba(24, 24, 24, 1.00);
   --color3: white;
   --colortrans: rgba(255, 255, 255, 0.4);
   --majorfont: serif;

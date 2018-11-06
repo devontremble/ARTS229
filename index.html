@@ -13,7 +13,6 @@
       justify-content: center;;
       display: grid;
       grid-template-columns: 85%;
-      margin: auto 10px;
       grid-row-gap: 15px;
     }
     body {
@@ -46,12 +45,15 @@
       color: #426A5A
     }
     #title {
-      height: 65px;
-      width: 200px;
       background-color: white;
-      border-radius: 25px;
-      margin: auto;
-      width: 50%;
+      margin-left: -15px;
+      margin-top: -31px;
+      height: 120px;
+      width: 110%;
+    }
+    #title h1 {
+      position: relative;
+      bottom: 0;
     }
     #category {
       height: 100%;
@@ -62,8 +64,11 @@
       margin-top: 45px;
       margin-bottom: 25px;
     }
-    @media screen and (min-width: 600px) {
 
+    @media screen and (min-width: 600px) {
+      #title {
+
+      }
     }
 
     @media screen and (min-width: 1200px) {
@@ -88,6 +93,7 @@
             <li><a href="experiments/mediaquery/index.html">media queries</a></li>
             <li><a href="experiments/flexbox/index.html">flexbox</a> <a href="experiments/flexbox/flexbox1.html">(1)</a><a href="experiments/flexbox/flexbox2.html">(2)</a></li>
             <li><a href="experiments/cssgrid/index.html">CSS Grid</a></li>
+            <li><a href="experiments/animation.html">animation ;)</a></li>
           </ul>
         </div>
         <div id="category">
