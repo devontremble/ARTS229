@@ -61,6 +61,13 @@ table {
   grid-template-columns: 100%;
   grid-gap: 10px;
 }
+.grid2 {
+  display: grid;
+  width: 85%;
+  margin: 10px auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
 .grid div {
   background-color: rg-ba(255, 255, 255, 0.23);
 }
@@ -70,6 +77,23 @@ table {
 
 .span-row-2 {
   grid-row: span 2;
+}
+#about {
+  opacity: 0.65;
+  color: white;
+}
+#aboutp {
+  text-align: justify;
+  margin: 10px auto;
+}
+#bandimg {
+  align-content: center;
+  margin: 10px auto;
+}
+#bandimg img {
+  margin: 30px auto;
+  width: 100%;
+  filter: grayscale(100%);
 }
 #bottomimage {
   opacity: 0.5;
@@ -199,6 +223,9 @@ table {
   .grid {
     grid-template-columns: 15% 85%;
   }
+  .grid2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .span-all-col {
     grid-column: span 2;
   }
@@ -255,6 +282,9 @@ table {
   }
   .grid {
     grid-template-columns: 10% auto 25%;
+  }
+  .grid2 {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .span-all-col {
     grid-column: span 3;
