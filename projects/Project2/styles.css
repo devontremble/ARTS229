@@ -11,50 +11,76 @@
 body {
   background-color: white;
 }
-.colors{
-  font-family: var(--majorfont);
-  width: 200px;
-  height: 200px;
-  border-radius: 50px;
-  font-size: 120px;
-  color: black;
-  align-content: stretch;
-  text-align: center;
-  align-items: center;
+p {
+  font-size: 7pt;
+}
+h2 {
+  font-size: 10pt;
 }
 .grid {
-  margin: 20px 10px 0px -8px;
+  margin: 0px 0px 0px 0px;
   display: grid;
-  grid-template-columns: 20% 40% 40%;
+  grid-template-columns: 100%;
   text-align: right;
-  height: 90%;
+  height: 100%;
   font-family: var(--minorfont);
 }
 .toolbar {
-  height: auto;
-  grid-row: span 14;
+  height: 200px;
   text-align: left;
   color: var(--color5);
   background-color: var(--color2);
   border-radius: 2px;
 }
 .toolbar a {
-  margin: 10px;
+  font-size: 7pt;
   text-decoration: none;
   color: var(--color5);
 }
+#icons{
+  width: 160px;
+  padding-bottom: 5px;
+}
+#icons a{
+  height: 45px;
+  padding-top: 5px;
+  width: 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 30pt;
+  text-align: center;
+  margin: 5px auto;
+  background-color: var(--color3);
+  border-radius: 50px;
+}
+#icons a:hover {
+  background-color: var(color--4);
+}
 #title {
-  font-size: 72pt;
+  display: unset;
+  font-size: 42pt;
   font-family: var(--majorfont);
   color: var(--color1);
 }
 #header {
-  margin-top: 5px auto;
-  height: 74pt;
+  display: unset;
+  text-align: center;
 }
 #coloredbottom {
   margin: 5px 0px;
   border-bottom: var(--color4) solid 2px;
+}
+#coloredbottom p {
+  margin-left: 10px;
+}
+#coloredbottom a {
+  color: var(--color3);
+}
+#coloredbottom a:visited {
+    color: var(--color2);
+}
+#coloredbottom a:hover {
+  color: var(--color4);
 }
 #c1 {
   background-color: var(--color1)
@@ -71,6 +97,9 @@ body {
 #c5 {
   background-color: var(--color5)
 }
+#grabspacer{
+  grid-row: span 2;
+}
 #img {
   height: 250px;
   width: 250px;
@@ -78,6 +107,57 @@ body {
   margin: 15px auto;
   border-radius: 15px;
 }
-#offset {
-  margin-top: 15px;
+#spacer {
+  height: 100px;
+}
+
+
+/*THIS IS FOR TABLET MODE*/
+
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 12pt;
+  }
+  h2 {
+    font-size: 14pt;
+  }
+  .grid {
+    margin: 0px 10px 0px -8px;
+    grid-template-columns: 20% 40% 40%;
+    text-align: right;
+    height: 100%;
+  }
+  .toolbar {
+    height: auto;
+    grid-row: span 14;
+  }
+  .toolbar a {
+    font-size: 12pt;
+    margin: 30px;
+  }
+  #header {
+    text-align: left;
+    height: 90pt;
+    margin-left: 10px;
+    grid-column: span 2;
+  }
+  #icons {
+    width: auto;
+  }
+  #icons a {
+    text-align: center;
+    font-size: 32pt;
+    height: 50px;
+    width: 60px;
+    padding-top: 10px;
+  }
+  #title {
+    font-size: 72pt;
+  }
+}
+
+/*THIS IS FOR DESKTOP MODE*/
+
+@media screen and (min-width: 1200px) {
+
 }
