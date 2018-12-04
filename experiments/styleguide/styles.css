@@ -1,0 +1,172 @@
+:root {
+  --color1: #ff1053;
+  --color2: #6c6ea0;
+  --color3: #66c7f4;
+  --color4: #c1cad6;
+  --color5: #ffffff;
+  --colortrans: rgba(255, 255, 255, 0.4);
+  --minorfont: 'Poppins', sans-serif;
+  --majorfont: 'Open Sans Condensed', sans-serif;
+}
+body {
+  background-image: url(graphics/stripes-light.png);
+  background-repeat: repeat;
+}
+p {
+  font-size: 10pt;
+}
+h2 {
+  font-size: 12pt;
+}
+.grid {
+  margin: 0px 0px 0px 0px;
+  display: grid;
+  grid-template-columns: 100%;
+  text-align: right;
+  height: 100%;
+  font-family: var(--minorfont);
+}
+.toolbar {
+  height: 200px;
+  text-align: left;
+  color: var(--color5);
+  background-color: var(--color2);
+  border-radius: 2px;
+}
+.toolbar a {
+  font-size: 10pt;
+  text-decoration: none;
+  color: var(--color5);
+}
+.toolbar a:hover {
+  color: var(--color4)
+}
+#icons{
+  width: 160px;
+  padding-bottom: 5px;
+}
+#icons a{
+  height: 45px;
+  padding-top: 5px;
+  width: 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 30pt;
+  text-align: center;
+  margin: 5px auto;
+  background-color: var(--color3);
+  border-radius: 50px;
+}
+#icons a:hover {
+  background-color: var(--color4);
+}
+#title {
+  display: unset;
+  font-size: 42pt;
+  font-family: var(--majorfont);
+  color: var(--color1);
+}
+#header {
+  display: unset;
+  text-align: center;
+}
+#coloredbottom {
+  margin: 5px 0px;
+  border-bottom: var(--color4) solid 2px;
+}
+#coloredbottom p {
+  margin-left: 10px;
+}
+#coloredbottom a {
+  color: var(--color3);
+}
+#coloredbottom a:visited {
+    color: var(--color2);
+}
+#coloredbottom a:hover {
+  color: var(--color4);
+}
+#c1 {
+  background-color: var(--color1)
+}
+#c2{
+  background-color: var(--color2)
+}
+#c3 {
+  background-color: var(--color3)
+}
+#c4 {
+  background-color: var(--color4)
+}
+#c5 {
+  background-color: var(--color5)
+}
+#img {
+  height: 150px;
+  width: 150px;
+  background-color: var(--color3);
+  margin: 15px auto;
+  border-radius: 15px;
+}
+
+
+
+/*THIS IS FOR TABLET MODE*/
+
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 12pt;
+  }
+  h2 {
+    font-size: 14pt;
+  }
+  .grid {
+    margin: 0px 10px 0px -8px;
+    grid-template-columns: 20% 40% 40%;
+    text-align: right;
+    height: 100%;
+  }
+  .toolbar {
+    height: auto;
+    grid-row: span 14;
+  }
+  .toolbar a {
+    font-size: 12pt;
+    margin-left: 30px;
+  }
+  #header {
+    text-align: left;
+    height: 90pt;
+    margin-left: 10px;
+    grid-column: span 2;
+  }
+  #icons {
+    width: auto;
+  }
+  #icons a {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 28pt;
+    height: 40px;
+    width: 48px;
+    padding-top: 8px;
+  }
+  #title {
+    font-size: 72pt;
+  }
+  #img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+/*THIS IS FOR DESKTOP MODE*/
+
+@media screen and (min-width: 1200px) {
+  .grid {
+      grid-template-columns: 16% 28% 28% 28% ;
+    }
+  #header {
+    grid-column: span 3;
+    }
+}
