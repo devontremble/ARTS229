@@ -1,0 +1,26 @@
+:root {
+  --color1: #66c7f4;
+  --color3: #ff1053;
+}
+#icons {
+  margin-top: -230px;
+}
+.toolbar {
+  margin-top: -450px;
+}
+#subscribe {
+  text-align: center;
+  margin-top: -570px;
+}
+
+@media screen and (min-width: 600px) {
+  #icons {
+    margin-top: 0;
+  }
+  #subscribe {
+    margin-top: 0;
+  }
+  .toolbar {
+    margin-top: 0;
+  }
+}
