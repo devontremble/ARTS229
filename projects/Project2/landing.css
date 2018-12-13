@@ -15,6 +15,7 @@ body {
 h5 {
   font-size: 70pt;
   font-family: var(--logofont);
+  margin-bottom: -180px;
 }
 .flip-horizontal-bottom1 {
   animation: flip-horizontal-bottom 0.56s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.75s both;
@@ -28,8 +29,8 @@ h5 {
 }
 #landing {
   position: absolute;
-  top: 30%;
-  left : 45%;
+  top: 20%;
+  left : 35%;
 }
 #real {
 color: var(--color3);
