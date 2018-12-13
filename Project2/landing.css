@@ -1,0 +1,46 @@
+:root {
+  --color1: #ff1053;
+  --color2: #6c6ea0;
+  --color3: #66c7f4;
+  --color4: #c1cad6;
+  --color5: #ffffff;
+  --colortrans: rgba(255, 255, 255, 0.4);
+  --minorfont: 'Poppins', sans-serif;
+  --majorfont: 'Open Sans Condensed', sans-serif;
+  --logofont: 'Bungee Inline', cursive;
+}
+body {
+  background-color: white;
+}
+h5 {
+  font-size: 70pt;
+  font-family: var(--logofont);
+  margin-bottom: -180px;
+}
+.flip-horizontal-bottom1 {
+  animation: flip-horizontal-bottom 0.56s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.75s both;
+}
+.flip-horizontal-bottom2 {
+	animation: flip-horizontal-bottom 0.56s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.75s both;
+  animation-delay: 1.4s;
+}
+#issues {
+  color: var(--color1);
+}
+#landing {
+  position: absolute;
+  top: 20%;
+  left : 35%;
+}
+#real {
+color: var(--color3);
+}
+@keyframes flip-horizontal-bottom {
+  0% {
+    transform: rotateX(-180deg);
+    color: var(--color5);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}

@@ -1,0 +1,16 @@
+:root {
+  --color1: #66c7f4;
+  --color3: #ff1053;
+}
+
+@media screen and (min-width: 600px) {
+  #icons {
+    margin-top: 0;
+  }
+  #subscribe {
+    margin-top: 0;
+  }
+  .toolbar {
+    margin-top: 0;
+  }
+}
